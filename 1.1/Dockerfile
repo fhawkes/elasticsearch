@@ -19,7 +19,7 @@ RUN mkdir -p /elasticsearch/persistent && \
     chmod -R og+rwx /elasticsearch
 
 COPY container-entrypoint /usr/bin/
-COPY elasticsearch.yml /etc/elasticsearch/
+COPY elasticsearch.yml logging.yml /etc/elasticsearch/
 
 EXPOSE 9200
 EXPOSE 9300
